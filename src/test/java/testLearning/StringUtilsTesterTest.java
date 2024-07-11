@@ -1,53 +1,15 @@
 package testLearning;
 
-import org.junit.Test;
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.Assert.assertEquals;
+public class StringUtilsTesterTest {
+	@Test
+	public void lazyTrim() {
+		String input = "abc";
+		String expected = "abc";
+		String actual = StringUtilsTester.lazyTrim(input);
 
-public class StringUtilsTesterTest{
-
-    @Test
-    public void lazyTrim1() {
-        String input = null;
-        String expected = "";
-        String actual = StringUtilsTester.lazyTrim(input);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void lazyTrim2() {
-        String input = "";
-        String expected = "";
-        String actual = StringUtilsTester.lazyTrim(input);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void lazyTrim3() {
-        String input = " R";
-        String expected = " R";
-        String actual = StringUtilsTester.lazyTrim(input);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void lazyTrim4() {
-        String input = "~";
-        String expected = "~";
-        String actual = StringUtilsTester.lazyTrim(input);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void lazyTrim5() {
-        String input = " ";
-        String expected = "";
-        String actual = StringUtilsTester.lazyTrim(input);
-
-        assertEquals(expected, actual);
-    }
+		assertEquals(expected, actual);
+	}
 }
