@@ -29,8 +29,13 @@ public class StringLearning {
         int y = 20;
         String result = STR."\{x} + \{y} = \{x + y}";
         System.out.println(result);
+
         StringTemplate st = RAW."\{x} + \{y} = \{x + y}";
         String resultAnother = STR.process(st);
+
+        System.out.println(st.fragments());
+        System.out.println(st.interpolate());
+
         System.out.println(resultAnother);
     }
 
@@ -61,7 +66,7 @@ public class StringLearning {
     }
 
     /*
-    ava provides a MessageFormat class of the Java.text package that helps in the composition of text
+    Java provides a MessageFormat class of the Java.text package that helps in the composition of text
     messages with placeholders for dynamic data.
 
     Localisation and Internationalisation heavily use this. We can use MessageFormat.format() in plain String composition
@@ -74,31 +79,34 @@ public class StringLearning {
 
     String interpolationUsingSTRProcessor(String feelsLike, String temperature, String unit) {
         return STR
-                . "Today's weather is \{ feelsLike }, with a temperature of \{ temperature } degrees \{ unit }" ;
+                ."Today's weather is \{feelsLike}, with a temperature of \{temperature} degrees \{unit}";
     }
 
     String interpolationOfJSONBlock(String feelsLike, String temperature, String unit) {
         return STR
-                . """
+                ."""
       {
-        "feelsLike": "\{ feelsLike }",
-        "temperature": "\{ temperature }",
-        "unit": "\{ unit }"
+        "feelsLike": "\{feelsLike}",
+        "temperature": "\{temperature}",
+        "unit": "\{unit}"
       }
-      """ ;
+      """;
     }
 
     String interpolationWithExpressions() {
         return STR
-                . "Today's weather is \{ getFeelsLike() }, with a temperature of \{ getTemperature() } degrees \{ getUnit() }";
+                ."Today's weather is \{getFeelsLike()}, with a temperature of \{getTemperature()} degrees \{getUnit()}";
     }
 
     private Object getUnit() {
+        return "F";
     }
 
     private Object getTemperature() {
+        return "100";
     }
 
     private Object getFeelsLike() {
+        return "110";
     }
 }
