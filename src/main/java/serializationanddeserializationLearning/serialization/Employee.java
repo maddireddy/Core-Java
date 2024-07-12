@@ -16,5 +16,6 @@ public class Employee implements Serializable {
     private String name;
     private int id;
     transient private int salary;
+
     //private String password;
 }
