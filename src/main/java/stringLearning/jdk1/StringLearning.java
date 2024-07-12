@@ -5,7 +5,7 @@ public class StringLearning {
     public static void main(String[] args) {
 
         /*
-        n JDK 1, Java introduced the String class as an immutable sequence of characters,
+        In JDK 1, Java introduced the String class as an immutable sequence of characters,
         a choice that was made keeping reliability and security in mind. Immutable strings are thread-safe,
         allowing safe use across multiple threads in multi-threaded applications—their predictability and resistance
         to tampering secure sensitive data like network addresses and file paths. Java's string pooling,
