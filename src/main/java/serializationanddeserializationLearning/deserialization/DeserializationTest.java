@@ -9,10 +9,7 @@ import java.io.ObjectStreamClass;
 public class DeserializationTest {
 
     public static void main(String[] args) {
-
-
-
-        String fileName="employee.ser";
+        String fileName = "employee.ser";
         Employee empNew = null;
 
         try {
@@ -24,7 +21,7 @@ public class DeserializationTest {
             e.printStackTrace();
         }
 
-        System.out.println("empNew Object::"+empNew);
+        System.out.println("empNew Object::" + empNew);
 
     }
 }
