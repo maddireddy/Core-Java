@@ -11,8 +11,6 @@ import java.io.Serializable;
 @ToString
 public class Employee implements Serializable {
 
-
-
     private String name;
     private int id;
     transient private int salary;
