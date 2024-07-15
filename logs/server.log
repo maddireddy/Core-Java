@@ -14,3 +14,6 @@ java.io.FileNotFoundException: Presentation on java preety1.pptx (No such file o
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
 	at loggerLearning.LoggerLearning.readFromFile(LoggerLearning.java:33)
 	at loggerLearning.LoggerLearning.main(LoggerLearning.java:21)
+2024-07-15 15:34:34,819  INFO  [ioPackage.FileOperations] File is already exist
+2024-07-15 15:34:34,822  INFO  [ioPackage.FileOperations] File rename successful
+2024-07-15 15:34:34,822  INFO  [ioPackage.FileOperations] File is failed to move!
