@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class BufferedWriterExample {
 	public static void main(String[] args) {
-		try (FileWriter writer = new FileWriter("D:\\sample.txt");
+		try (FileWriter writer = new FileWriter("sample.txt");
 				BufferedWriter buffer = new BufferedWriter(writer);) {
 			buffer.write("Welcome to JavaGuides.");
 			System.out.println("Success");

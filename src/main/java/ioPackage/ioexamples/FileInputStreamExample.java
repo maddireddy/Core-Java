@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class FileInputStreamExample {
 	public static void main(String[] args) {
-		File file = new File("C:/Project_Work/workspace/java-io-guide/sample.txt");
+		File file = new File("sample.txt");
 		try (FileInputStream fis = new FileInputStream(file)) {
 			System.out.println("Total file size to read (in bytes) : "+ fis.available());
 			int content;

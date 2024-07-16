@@ -7,7 +7,7 @@ import java.io.InputStream;
 
 public class DataInputStreamExample {
 	public static void main(String[] args) {
-		try(InputStream input = new FileInputStream("C:/Project_Work/workspace/java-io-guide/sample.txt");  
+		try(InputStream input = new FileInputStream("sample.txt");
 	    DataInputStream inst = new DataInputStream(input);){  
 	    int count = input.available(); 
 	    

@@ -13,7 +13,7 @@ public class FileOutputStreamExample {
 			.getLogger(FileOutputStreamExample.class);
 
 	public static void main(String[] args) {
-		File file = new File("C:/Project_Work/workspace/java-io-guide/sample.txt");
+		File file = new File("sample.txt");
 		String content = "This is the text content";
 
 		try (OutputStream fop = new FileOutputStream(file)) {

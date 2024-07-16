@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class BufferedReaderExample {
 	public static void main(String[] args) {
-		try (FileReader fr = new FileReader("C:/workspace/java-io-guide/sample.txt");
+		try (FileReader fr = new FileReader("sample.txt");
 				BufferedReader br = new BufferedReader(fr);) {
 			String sCurrentLine;
 

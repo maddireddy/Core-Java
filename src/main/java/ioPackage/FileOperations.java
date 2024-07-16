@@ -22,7 +22,7 @@ public class FileOperations {
     }
 
     public void deleteFile() {
-        File file = new File("C:/Project_Work/workspace/java-io-guide/sample.txt");
+        File file = new File("sample.txt");
         if (file.delete()) {
             LOGGER.info(file.getName() + "created !!");
         } else {

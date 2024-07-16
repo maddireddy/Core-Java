@@ -18,7 +18,7 @@ public class DataOutputStreamExample {
 		final String[] descs = { "Java T-shirt", "Java Mug", "Duke Juggling Dolls", "Java Pin", "Java Key Chain" };
 
 		try (DataOutputStream out = new DataOutputStream(
-				new BufferedOutputStream(new FileOutputStream("C:/Project_Work/workspace/java-io-guide/sample.txt")))) {
+				new BufferedOutputStream(new FileOutputStream("sample.txt")))) {
 			for (int i = 0; i < prices.length; i++) {
 				out.writeDouble(prices[i]);
 				out.writeInt(units[i]);

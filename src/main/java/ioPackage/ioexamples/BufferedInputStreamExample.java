@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class BufferedInputStreamExample {
 	public static void main(String[] args) {
-		try( FileInputStream fin=new FileInputStream("D:\\testout.txt");    
+		try( FileInputStream fin=new FileInputStream("testout.txt");
 			    BufferedInputStream bin=new BufferedInputStream(fin); ){
 			int i;    
 		    while((i=bin.read())!=-1){    
