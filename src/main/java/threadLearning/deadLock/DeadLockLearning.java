@@ -1,10 +1,6 @@
 package threadLearning.deadLock;
 
-import threadLearning.deadLockDetector.DeadlockDetector;
-import threadLearning.deadLockDetector.DetectionConsoleHandler;
-
 import java.util.Arrays;
-import java.util.concurrent.TimeUnit;
 
 public class DeadLockLearning {
 
@@ -13,9 +9,9 @@ public class DeadLockLearning {
 
     public static void main(String args[]) {
 
-        DeadlockDetector deadlockDetector = new DeadlockDetector(new DetectionConsoleHandler(),
+      /*  DeadlockDetector deadlockDetector = new DeadlockDetector(new DetectionConsoleHandler(),
                 5, TimeUnit.SECONDS);
-        deadlockDetector.start();
+        deadlockDetector.start();*/
 
         WorkerThread1 t1 = new WorkerThread1();
         WorkerThread2 t2 = new WorkerThread2();
