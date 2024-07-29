@@ -9,12 +9,11 @@ public class SwitchLearningCombined {
 
     }
 
-    public String getDay(String day){
-        return  switch (day) {
-            case "Monday","Tuesday","Wednesday","Thursday","Friday"
-                    -> "Week day";
+    public String getDay(String day) {
+        return switch (day) {
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> "Week day";
             case "Saturday", "Sunday" -> "Weekend";
-            default->"Unknown";
+            default -> "Unknown";
         };
     }
 }

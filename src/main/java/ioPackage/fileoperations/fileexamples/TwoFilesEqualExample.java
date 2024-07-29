@@ -9,13 +9,14 @@ import java.io.InputStream;
 
 public class TwoFilesEqualExample {
 
-	public static void main(String[] args) throws IOException {
-		File file = new File("sample.txt");
-		File file1 = new File("sample1.txt");
-		boolean hasEqual = contentEquals(file, file1);
-		System.out.println(hasEqual);
-	}
-	/**
+    public static void main(String[] args) throws IOException {
+        File file = new File("sample.txt");
+        File file1 = new File("sample1.txt");
+        boolean hasEqual = contentEquals(file, file1);
+        System.out.println(hasEqual);
+    }
+
+    /**
      * Compares the contents of two files to determine if they are equal or not.
      * <p>
      * This method checks to see if the two files are different lengths

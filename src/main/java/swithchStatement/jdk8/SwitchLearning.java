@@ -1,4 +1,5 @@
 package swithchStatement.jdk8;
+
 /*
 In Java 8 strings & enum were introduced in case values
 and switch statements started to evolve

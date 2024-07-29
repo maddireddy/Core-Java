@@ -26,8 +26,7 @@ public class DeadLockLearning {
 
                 try {
                     Thread.sleep(10);
-                }
-                catch (InterruptedException e) {
+                } catch (InterruptedException e) {
                     System.out.println(Arrays.toString(e.getStackTrace()));
                 }
                 System.out.println("Thread 1: Waiting for lock 2...");
@@ -46,8 +45,7 @@ public class DeadLockLearning {
 
                 try {
                     Thread.sleep(10);
-                }
-                catch (InterruptedException e) {
+                } catch (InterruptedException e) {
                     System.out.println(Arrays.toString(e.getStackTrace()));
                 }
                 System.out.println("Thread 2: Waiting for lock 1...");

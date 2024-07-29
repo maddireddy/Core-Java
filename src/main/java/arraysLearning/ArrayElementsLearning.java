@@ -62,10 +62,10 @@ public class ArrayElementsLearning {
 
         System.out.println("Get multidimensional array elements using for loop");
 
-        int[][] multidimensionalArray = new int[][] {
-                { 1, 2, 3, 4, 5 },
-                { 1, 2, 3, 4, 5 },
-                { 1, 2, 3, 4, 5 } };
+        int[][] multidimensionalArray = new int[][]{
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5}};
 
         for (int i = 0; i < multidimensionalArray.length; i++) {
             for (int j = 0; j < multidimensionalArray[i].length; j++) {

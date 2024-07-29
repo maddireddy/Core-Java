@@ -19,7 +19,7 @@ public class GaurdedLearning {
 
     }
 
-    public Object getMatch(Object obj){
+    public Object getMatch(Object obj) {
         return switch (obj) {
             case Integer i -> "It is an integer";
             case String s -> "It is a string";

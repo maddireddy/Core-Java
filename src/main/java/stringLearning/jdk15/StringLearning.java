@@ -7,20 +7,20 @@ which greatly enhanced working with multi-line string literals.
 public class StringLearning {
     public static void main(String[] args) {
         String html = """
-              <html>
-                  <body>
-                      <p>Hello, Java 13!</p>
-                  </body>
-              </html>
-              """;
+                <html>
+                    <body>
+                        <p>Hello, Java 13!</p>
+                    </body>
+                </html>
+                """;
         System.out.println(html);
 
         String name = "Siva";
         String greeting = """
-                 Hello,
-                 Dear %s,
-                 Welcome to our service.
-                 """.formatted(name);
+                Hello,
+                Dear %s,
+                Welcome to our service.
+                """.formatted(name);
 
         System.out.println(greeting);
 
@@ -32,27 +32,27 @@ public class StringLearning {
          */
 
         String complexSQL = """
-    SELECT 
-        u.name AS UserName,
-        p.title AS PostTitle,
-        c.name AS CategoryName
-    FROM 
-        Users u
-    INNER JOIN 
-        Posts p ON u.id = p.user_id
-    LEFT JOIN 
-        Categories c ON p.category_id = c.id
-    WHERE 
-        u.status = 'active'
-        AND p.published_date >= '2022-01-01'
-        AND (
-            c.name = 'Technology'
-            OR c.name = 'Science'
-        )
-    ORDER BY 
-        p.published_date DESC
-    LIMIT 10;
-    """;
+                SELECT 
+                    u.name AS UserName,
+                    p.title AS PostTitle,
+                    c.name AS CategoryName
+                FROM 
+                    Users u
+                INNER JOIN 
+                    Posts p ON u.id = p.user_id
+                LEFT JOIN 
+                    Categories c ON p.category_id = c.id
+                WHERE 
+                    u.status = 'active'
+                    AND p.published_date >= '2022-01-01'
+                    AND (
+                        c.name = 'Technology'
+                        OR c.name = 'Science'
+                    )
+                ORDER BY 
+                    p.published_date DESC
+                LIMIT 10;
+                """;
 
         System.out.println(complexSQL);
     }

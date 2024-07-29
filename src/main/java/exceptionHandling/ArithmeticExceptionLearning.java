@@ -9,8 +9,7 @@ public class ArithmeticExceptionLearning {
                 int result = num1 / num2; // divide by zero
                 //print the result
                 System.out.println("Result = " + result);
-            }
-            catch (ArithmeticException e) {
+            } catch (ArithmeticException e) {
                 System.out.println("ArithmeticException:Division by Zero");
             }
         }

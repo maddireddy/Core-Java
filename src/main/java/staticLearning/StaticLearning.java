@@ -27,8 +27,15 @@ public class StaticLearning {
 
     */
 
-    int a;
     static int b;
+
+    // Block
+    static {
+        b = 20;
+        System.out.println("Hello from static >>> " + b);
+    }
+
+    int a;
 
     //Method
     public static void main(String[] args) {
@@ -39,13 +46,7 @@ public class StaticLearning {
         staticLearning.display();
     }
 
-    public void  display(){
+    public void display() {
         System.out.println("Hi");
-    }
-
-    // Block
-    static {
-        b = 20;
-        System.out.println("Hello from static >>> " + b);
     }
 }

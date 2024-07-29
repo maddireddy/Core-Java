@@ -6,10 +6,6 @@ public class ObjectCreation {
     int b = 20;
     String name = "hello from ObjectCreation";
 
-    void display(){
-        System.out.println("My Object Learning Method" + name);
-    }
-
     public static void main(String[] args) {
 
         ObjectCreation objectCreation = new ObjectCreation();
@@ -21,5 +17,9 @@ public class ObjectCreation {
 
         // . operator to access fields and methods
 
+    }
+
+    void display() {
+        System.out.println("My Object Learning Method" + name);
     }
 }

@@ -12,7 +12,7 @@ public class CustomExceptionLearning {
             File file = new File("");
             FileInputStream fileInputStream = new FileInputStream(file);
             fileInputStream.read();
-        }catch (IOException exception){
+        } catch (IOException exception) {
             throw new CutomException(exception.getMessage());
         }
     }

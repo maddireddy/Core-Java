@@ -1,5 +1,3 @@
-
-
 package dataAbstractionLearning.accessSpeciers;
 
 import dataAbstractionLearning.defaultLearning.DefaultLearning;

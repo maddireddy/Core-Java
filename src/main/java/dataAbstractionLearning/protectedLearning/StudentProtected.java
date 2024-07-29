@@ -8,7 +8,7 @@ public class StudentProtected {
 
     protected String lname;
 
-    protected void display(){
+    protected void display() {
         System.out.println("Inside the Student: display method ");
     }
 

@@ -1,8 +1,7 @@
 package whileLoopLearning;
 
 public class GenerateTableUsingLoop {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int row = 1, column = 1, x;
         do {
             x = 4;

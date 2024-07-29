@@ -13,8 +13,7 @@ public class RunnableWorker implements Runnable {
         // As run cannot throw any Exception
         try {
             Thread.sleep(randomNumber * 1000);
-        }
-        catch (InterruptedException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
@@ -22,7 +21,7 @@ public class RunnableWorker implements Runnable {
         result = randomNumber;
 
         // Wake up threads blocked on the get() method
-        synchronized(this) {
+        synchronized (this) {
             notifyAll();
         }
     }

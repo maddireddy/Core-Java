@@ -10,9 +10,9 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class CompressMultipleFilesToZip {
-    List<String> fileList;
     private static final String OUTPUT_ZIP_FILE = "dest_sample.zip";
     private static final String SOURCE_FOLDER = "Learning";
+    List<String> fileList;
 
     CompressMultipleFilesToZip() {
         fileList = new ArrayList<String>();

@@ -17,8 +17,8 @@ The following code demonstrates the OutOfMemoryError that can occur because of a
 public class OutOfMemoryErrorLearning {
 
     static List<String> list = new ArrayList<>();
-    public static void main(String args[]) throws Exception
-    {
+
+    public static void main(String args[]) throws Exception {
         Integer[] array = new Integer[100000 * 100000];
     }
 }

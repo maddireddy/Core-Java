@@ -13,7 +13,7 @@ public class PatternSwitchLearning {
 
     public static void main(String[] args) {
 
-        int i =10;
+        int i = 10;
         PatternSwitchLearning patternSwitchLearning = new PatternSwitchLearning();
         patternSwitchLearning.getMatch(i);
 
@@ -30,7 +30,7 @@ public class PatternSwitchLearning {
     And through the arrow operator the string “It is an integer ” is returned .
      */
 
-    public Object getMatch(Object obj){
+    public Object getMatch(Object obj) {
         return switch (obj) {
             case Integer i -> "It is an integer";
             case String s -> "It is a string";

@@ -1,6 +1,6 @@
 package threadLearning;
 
-public class RunnableLearning implements  Runnable{
+public class RunnableLearning implements Runnable {
 
     // New
     @Override

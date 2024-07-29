@@ -1,6 +1,8 @@
 package ioPackage;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class BufferWriter {
 

@@ -11,7 +11,7 @@ public class ReadFileExamples {
     public void readFileWithFileInputStream() {
         File file = new File("sample.txt");
         try (FileInputStream fis = new FileInputStream(file)) {
-            System.out.println("Total file size to read (in bytes) : "+ fis.available());
+            System.out.println("Total file size to read (in bytes) : " + fis.available());
             int content;
             while ((content = fis.read()) != -1) {
                 // convert to char and display it

@@ -9,9 +9,9 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 public class DecompressZipExample {
-    List<String> fileList;
     private static final String INPUT_ZIP_FILE = "dest_sample.zip";
     private static final String OUTPUT_FOLDER = "outputzip";
+    List<String> fileList;
 
     public static void main(String[] args) {
         DecompressZipExample unZip = new DecompressZipExample();

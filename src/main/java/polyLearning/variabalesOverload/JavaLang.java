@@ -1,6 +1,6 @@
 package polyLearning.variabalesOverload;
 
-public class JavaLang extends ProgrammingLanguage{
+public class JavaLang extends ProgrammingLanguage {
 
     @Override
     public void display() {

@@ -13,8 +13,6 @@ public class DeadlockDetector {
     private final long period;
     private final TimeUnit unit;
     private final ThreadMXBean mbean = ManagementFactory.getThreadMXBean();
-    private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
-
     final Runnable deadlockCheck = new Runnable() {
         @Override
         public void run() {
@@ -28,6 +26,7 @@ public class DeadlockDetector {
             }
         }
     };
+    private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
     public DeadlockDetector(final DetectionHandler deadlockHandler,
                             final long period,

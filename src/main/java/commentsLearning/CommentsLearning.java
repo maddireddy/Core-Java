@@ -27,7 +27,7 @@ public class CommentsLearning {
     }
 
     // Siva - 06/14
-    public void display(){
+    public void display() {
         Date date = new Date();
         System.out.println(date);
     }

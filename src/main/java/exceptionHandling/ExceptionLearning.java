@@ -17,16 +17,16 @@ public class ExceptionLearning {
     // Checked and Unchecked Exceptions(Definition , What are all those)
 
 
-    public static void main(String[] args) throws  Exception {
+    public static void main(String[] args) throws Exception {
         System.out.println("---------");
         int a = 10;
         String b = "Hi";
 
-        try{
+        try {
             // Problematic code goes here
-        }catch (Exception e){
-            throw  new Exception();
-        }finally {
+        } catch (Exception e) {
+            throw new Exception();
+        } finally {
 
         }
 

@@ -1,10 +1,10 @@
 package messagePassing.betweenObjects.looslycoupled;
 
-public class ObjectB implements MessageSender{
+public class ObjectB implements MessageSender {
 
     private int variable;
 
-    public ObjectB(int value){
+    public ObjectB(int value) {
         variable = value;
     }
 

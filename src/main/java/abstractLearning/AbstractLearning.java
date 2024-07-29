@@ -1,6 +1,6 @@
 package abstractLearning;
 
-public abstract class AbstractLearning extends AbstrctTest{
+public abstract class AbstractLearning extends AbstrctTest {
 
     public static void main(String[] args) {
         System.out.println("Inside the Abstract Learning class");

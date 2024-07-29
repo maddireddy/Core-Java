@@ -8,7 +8,7 @@ public class Student {
 
     private String lname;
 
-    public void display(){
+    public void display() {
         System.out.println("Inside the Student: display method ");
     }
 

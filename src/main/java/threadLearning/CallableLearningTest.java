@@ -14,7 +14,7 @@ public class CallableLearningTest {
 
         //ExecutorService executorService = Executors.newFixedThreadPool(5);
 
-        ExecutorService executorService = Executors.newFixedThreadPool(5,new NamedThreadFactory());
+        ExecutorService executorService = Executors.newFixedThreadPool(5, new NamedThreadFactory());
 
         List<Future<Integer>> returnedValues = executorService.invokeAll(Arrays.asList(
                 new CallableLearning(50),

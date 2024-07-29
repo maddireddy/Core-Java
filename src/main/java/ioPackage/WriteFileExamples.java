@@ -7,6 +7,14 @@ import java.io.*;
 public class WriteFileExamples {
     private static final Logger LOGGER = Logger.getLogger(WriteFileExamples.class);
 
+    public static void main(String[] args) {
+        WriteFileExamples examples = new WriteFileExamples();
+        // examples.writeFileWithFileOutputStream();
+        // examples.writeFileWithFileFileWriter();
+        // examples.writeFileWithDataOutputStream();
+        examples.writeFileWithObjectOutputStream();
+    }
+
     // FileOutputStream is meant for writing streams of raw bytes such as image
     // data.
     // For writing streams of characters, consider using FileWriter.
@@ -119,13 +127,5 @@ public class WriteFileExamples {
         } catch (IOException e) {
             LOGGER.error(e.getMessage());
         }
-    }
-
-    public static void main(String[] args) {
-        WriteFileExamples examples = new WriteFileExamples();
-        // examples.writeFileWithFileOutputStream();
-        // examples.writeFileWithFileFileWriter();
-        // examples.writeFileWithDataOutputStream();
-        examples.writeFileWithObjectOutputStream();
     }
 }

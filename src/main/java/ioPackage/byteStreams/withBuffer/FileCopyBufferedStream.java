@@ -15,7 +15,7 @@ public class FileCopyBufferedStream {
         System.out.println("File size is " + fileIn.length() + " bytes");
 
         try {
-            in  = new BufferedInputStream(new FileInputStream(inFileStr));
+            in = new BufferedInputStream(new FileInputStream(inFileStr));
             out = new BufferedOutputStream(new FileOutputStream(outFileStr));
             startTime = System.nanoTime();
             int byteRead;
@@ -30,7 +30,9 @@ public class FileCopyBufferedStream {
             try {
                 if (in != null) in.close();
                 if (out != null) out.close();
-            } catch (IOException ex) { ex.printStackTrace(); }
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         }
     }
 }

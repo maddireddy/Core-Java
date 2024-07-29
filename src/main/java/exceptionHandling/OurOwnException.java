@@ -1,4 +1,4 @@
 package exceptionHandling;
 
-public class OurOwnException  extends  Throwable{
+public class OurOwnException extends Throwable {
 }

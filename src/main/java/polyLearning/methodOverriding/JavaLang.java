@@ -1,6 +1,6 @@
 package polyLearning.methodOverriding;
 
-public class JavaLang extends Language{
+public class JavaLang extends Language {
 
     @Override
     public void displayInfo() {

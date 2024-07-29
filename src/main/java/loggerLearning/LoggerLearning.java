@@ -15,8 +15,8 @@ public class LoggerLearning {
     private static final Logger logger = LogManager.getLogger(LoggerLearning.class);
 
     public static void main(String[] args) {
-    logger.info("Inside Main");
-    LoggerLearning loggerLearning = new LoggerLearning();
+        logger.info("Inside Main");
+        LoggerLearning loggerLearning = new LoggerLearning();
         try {
             loggerLearning.readFromFile();
         } catch (IOException e) {
@@ -28,16 +28,16 @@ public class LoggerLearning {
     public void readFromFile() throws IOException {
         FileInputStream fileInputStream = null;
         Date date = null;
-        try{
+        try {
             File file = new File("Presentation on java preety1.pptx");
             fileInputStream = new FileInputStream(file);
             int count = fileInputStream.read();
             System.out.println(count);
             date = new Date();
             System.out.println(date);
-        }catch (IOException ioException){
+        } catch (IOException ioException) {
             ioException.printStackTrace();
-            logger.error("Exception while reading the file" ,ioException);
+            logger.error("Exception while reading the file", ioException);
             throw ioException;
         }
 

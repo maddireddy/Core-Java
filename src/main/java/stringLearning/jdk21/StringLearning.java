@@ -2,7 +2,6 @@ package stringLearning.jdk21;
 
 import java.text.MessageFormat;
 
-import static java.lang.StringTemplate.STR;
 import static java.lang.StringTemplate.RAW;
 
 /*

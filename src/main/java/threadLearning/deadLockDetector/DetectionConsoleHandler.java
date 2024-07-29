@@ -4,7 +4,7 @@ import java.lang.management.ThreadInfo;
 import java.time.LocalDateTime;
 import java.util.Map;
 
-public class DetectionConsoleHandler implements DetectionHandler{
+public class DetectionConsoleHandler implements DetectionHandler {
 
     @Override
     public void handleDeadlock(final ThreadInfo[] deadlockedThreads) {

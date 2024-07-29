@@ -45,8 +45,8 @@
         <param name="MaxBackupIndex" value="5"/>
         <param name="Threshold" value="WARN"/>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">
-            <param name="LevelMin" value="WARN" />
-            <param name="LevelMax" value="WARN" />
+            <param name="LevelMin" value="WARN"/>
+            <param name="LevelMax" value="WARN"/>
         </filter>
         <!-- Uncomment this if you want to use UTF-8 encoding instead of system's default encoding.
         <param name="encoding" value="UTF-8" />
@@ -66,8 +66,8 @@
         <param name="MaxBackupIndex" value="5"/>
         <param name="Threshold" value="ERROR"/>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">
-            <param name="LevelMin" value="ERROR" />
-            <param name="LevelMax" value="ERROR" />
+            <param name="LevelMin" value="ERROR"/>
+            <param name="LevelMax" value="ERROR"/>
         </filter>
         <!-- Uncomment this if you want to use UTF-8 encoding instead of system's default encoding.
         <param name="encoding" value="UTF-8" />
@@ -379,7 +379,8 @@
             <!-- Available fields for ConversionPattern:
                  Refer to the available fields in the SecurityAudit2File appender.
             -->
-            <param name="ConversionPattern" value="%d event=%X{event} subject=&quot;%X{subject}&quot; ip=%X{ip} app=%X{app} connectionid=%X{connectionid} protocol=%X{protocol} pfhost=%X{host} role=%X{role} status=%X{status} adapterid=%X{adapterid} description=&quot;%X{description}&quot; responsetime=%X{responsetime} %n"/>
+            <param name="ConversionPattern"
+                   value="%d event=%X{event} subject=&quot;%X{subject}&quot; ip=%X{ip} app=%X{app} connectionid=%X{connectionid} protocol=%X{protocol} pfhost=%X{host} role=%X{role} status=%X{status} adapterid=%X{adapterid} description=&quot;%X{description}&quot; responsetime=%X{responsetime} %n"/>
         </layout>
     </appender>
 
@@ -430,7 +431,8 @@
                  %X{requeststarttime} - start time of the request (milliseconds since midnight, January 1, 1970 UTC).
                  %X{responsetime} - time to process the request, in milliseconds
             -->
-            <param name="ConversionPattern" value="%d|%X{event}| %X{subject}| %X{ip} | %X{app}| %X{connectionid}| %X{protocol}| %X{host}| %X{role}| %X{status}| %X{adapterid}| %X{description}| %X{responsetime} %n"/>
+            <param name="ConversionPattern"
+                   value="%d|%X{event}| %X{subject}| %X{ip} | %X{app}| %X{connectionid}| %X{protocol}| %X{host}| %X{role}| %X{status}| %X{adapterid}| %X{description}| %X{responsetime} %n"/>
         </layout>
     </appender>
 
@@ -814,7 +816,7 @@
     </category>
 
     <logger name="org.sourceid.saml20.bindings.BindingLogProxy" additivity="false">
-        <level value="INFO" />
+        <level value="INFO"/>
         <appender-ref ref="SamlTransaction"/>
     </logger>
 
@@ -833,7 +835,7 @@
      -->
 
     <logger name="org.sourceid.websso.profiles.sp.SpAuditLogger" additivity="false">
-        <level value="INFO" />
+        <level value="INFO"/>
         <appender-ref ref="SecurityAudit2File"/>
         <!--
             <appender-ref ref="SecurityAuditToSQLServerDB"/>
@@ -883,7 +885,7 @@
          If one of these appenders is added, remove the existing reference to "SecurityAudit2File".
      -->
     <logger name="org.sourceid.websso.profiles.idp.IdpAuditLogger" additivity="false">
-        <level value="INFO" />
+        <level value="INFO"/>
         <appender-ref ref="SecurityAudit2File"/>
         <!--
             <appender-ref ref="SecurityAuditToCEFSyslog"/>
@@ -909,7 +911,7 @@
          If one of these appenders is added, remove the existing reference to "SecurityAudit2File".
      -->
     <logger name="org.sourceid.websso.profiles.idp.AsAuditLogger" additivity="false">
-        <level value="INFO" />
+        <level value="INFO"/>
         <appender-ref ref="SecurityAudit2File"/>
         <!--
             <appender-ref ref="SecurityAuditToCEFSyslog"/>
@@ -935,7 +937,7 @@
          If one of these appenders is added, remove the existing reference to "SecurityAudit2File".
      -->
     <logger name="org.sourceid.wstrust.log.STSAuditLogger" additivity="false">
-        <level value="INFO" />
+        <level value="INFO"/>
         <appender-ref ref="SecurityAudit2File"/>
         <!--
             <appender-ref ref="SecurityAuditToCEFSyslog"/>
@@ -949,7 +951,7 @@
 
 
     <logger name="AuditLogger" additivity="false">
-        <level value="INFO" />
+        <level value="INFO"/>
         <appender-ref ref="AdminAudit"/>
     </logger>
 

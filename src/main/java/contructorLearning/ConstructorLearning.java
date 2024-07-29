@@ -5,7 +5,7 @@ public class ConstructorLearning {
     int a = 10;
     int b = 20;
 
-    ConstructorLearning(){
+    ConstructorLearning() {
         //Constructor
         //Default Constructor with no Arguments
         //Thumb Rule - Constructor Name should be the class name
@@ -13,17 +13,17 @@ public class ConstructorLearning {
         // For Constructors "default" access-modifier is not allowed
     }
 
-    ConstructorLearning(String a){
+    ConstructorLearning(String a) {
         System.out.println("Im in String argumented constructor " + a);
     }
 
-    ConstructorLearning(int a){
+    ConstructorLearning(int a) {
         System.out.println("Single argumented Constructor " + a);
     }
 
-    ConstructorLearning(int a,int b){
-        System.out.println(this.a + " <<>>>" + this.b );
-        System.out.println("Argumented vaules " + a + " ::: " + b );
+    ConstructorLearning(int a, int b) {
+        System.out.println(this.a + " <<>>>" + this.b);
+        System.out.println("Argumented vaules " + a + " ::: " + b);
     }
 
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class ConstructorLearning {
         int b2 = constructorLearning2.b;
         System.out.println("B Value ::: " + b2);
 
-        ConstructorLearning constructorLearning3 = new ConstructorLearning(20,30);
+        ConstructorLearning constructorLearning3 = new ConstructorLearning(20, 30);
         int a2 = constructorLearning3.a;
         System.out.println("A Value :: " + a2);
     }

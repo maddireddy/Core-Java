@@ -1,11 +1,11 @@
 package threadLearning;
 
-public class ThreadLearning extends  Thread{
+public class ThreadLearning extends Thread {
 
     public static void main(String[] args) {
         System.out.println("Hi");
 
-        Thread t1= new Thread(); // New
+        Thread t1 = new Thread(); // New
         t1.start(); // Ready to RUn
         t1.setName("Siva");
         t1.setPriority(10);

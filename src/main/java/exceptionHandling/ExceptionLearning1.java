@@ -2,7 +2,6 @@ package exceptionHandling;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -34,7 +33,7 @@ public class ExceptionLearning1 {
             statement.execute("insert into table  LEARNING values()" + 1);
 
         } catch (IOException exception) {
-            throw  new IOException();
+            throw new IOException();
         } catch (SQLException e) {
             throw new SQLException();
         } finally {

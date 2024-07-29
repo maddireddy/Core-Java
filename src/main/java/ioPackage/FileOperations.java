@@ -8,6 +8,18 @@ public class FileOperations {
 
     private static final Logger LOGGER = Logger.getLogger(FileOperations.class);
 
+    public static void main(String[] args) {
+        FileOperations fileOperations = new FileOperations();
+        fileOperations.createFile();
+        fileOperations.renameFile();
+        fileOperations.copyFile();
+        fileOperations.moveFile();
+        fileOperations.writeFile();
+        fileOperations.appendToExitingFile();
+        fileOperations.getFileSize();
+        fileOperations.getFilePath();
+    }
+
     public void createFile() {
         File file = new File("sample.txt");
         try {
@@ -75,8 +87,8 @@ public class FileOperations {
         }
     }
 
-    public void appendToExitingFile(){
-        try (Writer writer = new FileWriter("sample.txt",true);
+    public void appendToExitingFile() {
+        try (Writer writer = new FileWriter("sample.txt", true);
              BufferedWriter bw = new BufferedWriter(writer)) {
             String content = "append something to existing file\n";
             bw.write(content);
@@ -85,9 +97,9 @@ public class FileOperations {
         }
     }
 
-    public void getFileSize(){
+    public void getFileSize() {
         File file = new File("sample.txt");
-        if(file.exists()){
+        if (file.exists()) {
             double bytes = file.length();
             double kilobytes = (bytes / 1024);
             double megabytes = (kilobytes / 1024);
@@ -107,29 +119,17 @@ public class FileOperations {
             System.out.println("exabytes : " + exabytes);
             System.out.println("zettabytes : " + zettabytes);
             System.out.println("yottabytes : " + yottabytes);
-        }else{
+        } else {
             System.out.println("File does not exists!");
         }
     }
 
-    public void getFilePath(){
+    public void getFilePath() {
         File file = new File("sample.txt");
         String absolutePath = file.getAbsolutePath();
         String filePath = absolutePath.
-                substring(0,absolutePath.lastIndexOf(File.separator));
+                substring(0, absolutePath.lastIndexOf(File.separator));
         System.out.println(filePath);
-    }
-
-    public static void main(String[] args) {
-        FileOperations fileOperations = new FileOperations();
-        fileOperations.createFile();
-        fileOperations.renameFile();
-        fileOperations.copyFile();
-        fileOperations.moveFile();
-        fileOperations.writeFile();
-        fileOperations.appendToExitingFile();
-        fileOperations.getFileSize();
-        fileOperations.getFilePath();
     }
 
 }

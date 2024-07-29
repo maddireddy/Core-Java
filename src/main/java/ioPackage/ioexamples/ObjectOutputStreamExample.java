@@ -11,26 +11,26 @@ import java.util.Date;
 
 public class ObjectOutputStreamExample {
 
-	public static void main(String[] args) {
-		try (final FileOutputStream fout = new FileOutputStream("employees.txt");
-				final ObjectOutputStream out = new ObjectOutputStream(fout)) {
-			out.writeInt(12345);
-			out.writeObject("Today");
-			out.writeObject(new Date());
-		      
-			out.flush();
-			System.out.println("success");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        try (final FileOutputStream fout = new FileOutputStream("employees.txt");
+             final ObjectOutputStream out = new ObjectOutputStream(fout)) {
+            out.writeInt(12345);
+            out.writeObject("Today");
+            out.writeObject(new Date());
+
+            out.flush();
+            System.out.println("success");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 @Getter
 @Setter
 class EmployeeFile implements Serializable {
-	private static final long serialVersionUID = 1L;
-	private int id;
-	private String name;
+    private static final long serialVersionUID = 1L;
+    private int id;
+    private String name;
 
 }

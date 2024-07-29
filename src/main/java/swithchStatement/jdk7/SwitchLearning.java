@@ -1,4 +1,5 @@
 package swithchStatement.jdk7;
+
 /*
 Until Java 7 only integers could be used in switch case and this
 had been the standard for a long time:
